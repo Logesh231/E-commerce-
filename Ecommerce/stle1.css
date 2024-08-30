@@ -1,0 +1,268 @@
+.cs1{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    align-items: center;
+}
+.cs1 h2{
+    color: rgb(16, 16, 17)
+}
+.css2{
+    display: flex;
+    column-gap: 40px;
+  
+}
+*{
+    padding: 0px;
+    margin: 0;
+}
+.cs3{
+    display: flex;
+}
+.cs3 a{
+    text-decoration: none;
+    color: black;
+}
+.cs3 a:hover{
+    color: blue;
+}
+.nav{
+    display: none;
+}
+@media screen and (max-Width:700px) {
+    .css2{
+        display:none;
+    }
+    .nav{
+        display:block;
+    }
+    .ima{
+        display:none
+    }
+    .cs10 .cs11,.cs12{
+        display:none;
+    }
+}
+.popup{
+    height: 100%;
+    top:0;
+    left: -60%;
+    bottom: 0;
+    width: 25%;
+    background-color: black;
+    position: fixed;
+    transition: 2s;
+}
+.cs4{
+    color: aliceblue;
+}
+.cs6{
+    color: aliceblue;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.cs6 a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.cs7{
+    display: flex;
+    column-gap: 80px;
+    justify-content: center;
+    margin-top: 70px;
+}
+.cs9 img{
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+}
+.cs8 h1,h4,button{
+    margin-bottom: 20px;
+}
+.cs8 h1,h4{
+    color: rgb(97, 77, 251);
+}
+.cs8 button{
+    padding: 5px;
+    background-color: black;
+    color: rgb(253, 252, 252);
+    border-radius: 2px;
+}
+.cs10{
+    padding-top:40px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cs10 h2{
+    margin-top: 10px;
+}
+.cs12{
+    padding-top: 25px;
+    padding-right: 10px;
+}
+.cs13{
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+.cs15 li{
+    list-style-type: none;
+    text-shadow: 2px;
+
+}
+.cs15 i{
+    color: rgb(245, 18, 30);
+}
+.cs13 .cs15,.cs15,.cs15{
+    background-color:rgb(234, 234, 226);
+    border-radius: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.cs15{
+    margin-right: 15px;
+    padding-left: 10px;
+}
+.cs20 img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.cs20{
+   flex-basis: 20% ;
+   position: relative;
+}
+.cs20 button{
+    position: absolute;
+    top:50%;
+    left: 18%;
+    background-color: rgb(204, 230, 230);
+    border: 0cap;
+    padding: 5px;
+    border-radius: 2px;
+
+}
+.cs19 h1{
+    padding-left: 10px;
+
+}
+.cs21{
+    text-align: center;
+    margin-top: 20px;
+}
+.cs21 h1,p,input{
+    margin-bottom: 15px;
+
+}
+.cs21 input{
+    width: 800px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width: 2px;
+}
+.cs21 button{
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
+    border: 0cap;
+    border-radius: 6px;
+}
+.cs22{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+}
+.cs22 h2,p{
+    padding-top: 10px;
+}
+.cs23{
+    display:flex;
+    column-gap: 20px;
+
+}
+.se1 input{
+    width: 900px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.se1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.se3 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+}
+.se2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.se3{
+    text-align: center;
+    flex-basis: 25%;
+    position: relative;
+    padding-bottom: 20px;
+}
+.ce3 input{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+}
+.ce4 input{
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+}
+.ce5 input{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+}
+.ce1{
+    background-color: black;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 40px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.ce3 p{
+    color: aliceblue;
+}
+.ce2 h2{
+    color: aliceblue;
+    padding-bottom: 30px;
+}
+.ce4 p{
+    color: aliceblue;
+} 
+.ce5 p{
+    color: aliceblue;
+}
+.ce6 button{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    background-color: blue;
+    border-radius: 3px;
+    border: 0cap;
+
+
+} 
+

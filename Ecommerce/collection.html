@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stle1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="eco.js"></script>
+</head>
+<body>
+    <nav class="cs1">
+        <h2>Naruto</h2>
+        <div class="css2">  
+            <p class="cs3"><a href="ec.html">Home</a></p>
+            <p class="cs3"><a href="collection.html">Collections</a></p>
+            <p class="cs3"><a href="contactus.html">ContactUs</a></p>
+        </div>
+        <div class="nav" onclick="pop()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <div class="popup">
+        <p class="cs4" style="text-align: right;" onclick="del()"><i class="fa-solid fa-rectangle-xmark"></i></p>
+        <div class="cs5">
+            <p class="cs6"><a href="ec.html">Home</a></p>
+            <p class="cs6"><a href="collection.html">AboutUs</a></p>
+            <p class="cs6"><a href="contactus.html">ContactUs</a></p>
+        </div>
+    </div>
+    <div class="se1">
+        <input placeholder="Search" id="search">
+    </div>
+    <div class="se2" id="se2">
+        <div class="se3">
+            <img src="https://ae01.alicdn.com/kf/HTB1UNqBdRgXBuNjt_hNq6yEiFXap/Mens-Ripped-Solid-Short-Sleeve-Leisure-Top-Shirt.jpg">
+            <P>Black shirt</P>
+        </div>
+        <div class="se3">
+            <img src="https://ae01.alicdn.com/kf/HTB1dIDdPFXXXXbbXVXXq6xXFXXXD/2017-Pure-Linen-Shirts-Men-Short-Sleeve-Solid-White-Men-Shirt-Brand-Summer-Flax-Shirt-Mens.jpg">
+            <P>white shirt</P>
+        </div>
+        <div class="se3">
+            <img src="https://images.bewakoof.com/original/urban-grey-shirt-men-s-plain-mandarin-collar-pique-full-sleeve-shirt-1508244327.jpg">
+            <P>Grey shirt</P>
+        </div>
+        <div class="se3">
+            <img src="https://culture-kings.imgix.net/products/03001145-YB015_normal_0010_0fa8a0f7-4432-4ecb-a9ff-fc878f6c2832.jpg?v=1592270250&auto=compress,format">
+            <P>Black pant</P>
+        </div><br>
+        <div class="se3">
+            <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1525363813-brooks-brothers-white-pant-1525363773.jpg?crop=1xw:1xh;center,top&resize=480:*">
+            <P>white pant</P>
+        </div>
+        <div class="se3">
+            <img src="https://images.bewakoof.com/original/grey-men-s-casual-jogger-pants-men-s-casual-side-panel-joggers-pants-295426-1610623212.jpg">
+            <P>Grey pant</P>
+        </div>
+        <div class="se3">
+            <img src="https://www.boggi.com/on/demandware.static/-/Sites-BoggiCatalog/default/dwdd2aea06/images/hi-res/BO19P017401_1.jpg">
+            <P>Blue Shirt</P>
+        </div>
+        <div class="se3">
+            <img src="https://i.pinimg.com/originals/9e/e6/4f/9ee64f0c2e5f3e40170bf76167d88d84.jpg">
+            <P>Blue pant</P>
+        </div>
+    </div>
+    <script>
+        var search = document.getElementById("search");
+        var container = document.getElementById("se2");
+        var input = container.querySelectorAll(".se3");
+        search.addEventListener("keyup", function(event) {
+            var enterva = event.target.value.toUpperCase();
+            for (var count = 0; count < input.length; count++) {
+                var pron = input[count].querySelector("p").textContent.toUpperCase();
+                if (pron.indexOf(enterva) < 0) {
+                    input[count].style.display = "none";
+                }
+                else
+                {
+                    input[count].style.display = "block";
+                }
+            }
+        });
+
+
+    </script>
+</body>
+</html>
